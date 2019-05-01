@@ -27,10 +27,10 @@ module.exports = {
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    domain: 'http://localhost',
+    domain: 'http://localhost/',
     proxyTable: {
       '/api': {
-        target: 'http://localhost',
+        target: 'http://localhost/',
         changeOrigin: true
       }
     },
