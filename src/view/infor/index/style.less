@@ -1,0 +1,77 @@
+@import "../../../asset/style/index";
+
+.infor-index {
+  background-color:#fff;
+}
+
+.head-expand {
+  .px2rem(padding, 20px);
+  background-color: #fff;
+
+  .head {
+    .px2rem(height, 140px);
+    .flexbox();
+    .align-items(center);
+
+    border-bottom: 1px solid @main-color;
+
+    .title {
+      .flex(1);
+    }
+
+    .txt {
+      .fontSize(72);
+    }
+
+    .action {
+      .px2rem(margin-left, 20px);
+    }
+
+    .button {
+      .px2rem(margin-left, 20px);
+    }
+
+    .iconfont {
+      .fontSize(56);
+    }
+  }
+}
+
+.infors {
+  .px2rem(margin-top, -20px);
+
+  .item {
+    .flexbox();
+    .px2rem(margin, 0px 20px);
+    .px2rem(padding, 10px 0px);
+    border-bottom: 1px solid @border-color;
+
+    .avatar {
+      .px2rem(width, 128px);
+      .px2rem(height, 128px);
+      .border-radius();
+      .px2rem(margin-right, 20px);
+      overflow: hidden;
+    }
+
+    .info {
+      .flex(1);
+
+      .title {
+        .fontSize(38);
+      }
+
+      .desc {
+        .fontSize(32);
+        color: @secondary-font-color;
+      }
+    }
+
+    .time {
+      align-self: flex-start;
+      color: @secondary-font-color;
+      .px2rem(margin-top, 10px);
+      .fontSize(30);
+    }
+  }
+}

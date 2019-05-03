@@ -1,0 +1,160 @@
+@import "format";
+@import "function";
+@import "theme";
+@import "mint-ui";
+
+// 文本对齐方式
+.ta(...) {
+  text-align: @arguments;
+}
+// 居中
+.tac {
+  .ta(center);
+}
+// 居右
+.tar {
+  .ta(right);
+}
+// 居左
+.tal {
+  .ta(left)
+}
+
+.txt-nowrap {
+  white-space:nowrap;
+}
+.txt-ellipsis {
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.txt-ellipsis-2{
+  .ellipsis-2();
+}
+.txt-ellipsis-3{
+  .ellipsis-2();
+}
+
+.callee(@counter, @max, @depth, @key, @prototype) when(@counter <= @max) {
+  .@{key}@{counter} {
+    .px2rem(@prototype, @counter)!important;
+  }
+  .callee(@counter + @depth, @max, @depth, @key, @prototype);
+}
+// margin边距
+.callee(0, 60, 2, m, margin);
+.callee(0, 60, 2, ml, margin-left);
+.callee(0, 60, 2, mt, margin-top);
+.callee(0, 60, 2, mr, margin-right);
+.callee(0, 60, 2, mb, margin-bottom);
+// padding边距
+.callee(0, 60, 2, p, padding);
+.callee(0, 60, 2, pt, padding-top);
+.callee(0, 60, 2, pr, padding-right);
+.callee(0, 60, 2, pb, padding-bottom);
+.callee(0, 60, 2, pl, padding-left);
+
+// 设置文字大小
+.callee(20, 60, 2, fz, font-size);
+
+// float
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+// display
+.db {
+  .display(block) !important;
+}
+.dib {
+  .display(inline-block) !important;
+}
+.dn {
+  .display(none) !important;
+}
+.di {
+  .display(inline) !important;
+}
+.dt {
+  .display(table) !important;
+}
+.dtc {
+  .display(table-cell) !important;
+}
+.df {
+  .display(flex) !important;
+}
+
+// opacity
+.op0 {
+  opacity:0;
+}
+.op1 {
+  opacity:1;
+}
+
+// flex相关
+.flex-auto {
+  .df;
+
+  > *:not(.flex-fixed) {
+    .flex(1);
+  }
+}
+
+.iconfont {
+  .fontSize(32);
+  -webkit-font-smoothing: antialiased;
+  .px2rem(-webkit-text-stroke-width, 0.4);
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.price-yen {
+  font-style: normal;
+}
+
+// overflow相关
+.oh {
+  overflow: hidden;
+}
+.ov {
+  overflow: visible;
+}
+
+// position相关
+.pos_r {
+  position: relative;
+}
+.pos_a {
+  position: absolute;
+}
+.pos_f {
+  position: fixed;
+}
+.pos_bottom {
+  position: fixed;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+body {
+  line-height: 1.6;
+}
+
+body, input, textarea, keygen, select, button {
+  .fontSize(38);
+  border: none;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.body {
+  .px2rem(padding-bottom, 110);
+  .px2rem(min-height, 1334);
+}

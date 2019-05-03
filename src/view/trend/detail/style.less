@@ -1,0 +1,213 @@
+@import "../../../asset/style/index";
+
+.trend-detail {
+
+}
+
+.trend-item {
+  .px2rem(padding, 10px 20px);
+  .px2rem(margin-bottom, 10);
+  background: #fff;
+  overflow: hidden;
+
+  .trend-header {
+    .px2rem(margin-bottom, 10px);
+
+    .user {
+      .flexbox();
+    }
+
+    .user-avatar {
+      .px2rem(height, 78px);
+      .px2rem(width, 78px);
+      .border-radius();
+    }
+
+    .user-info {
+      .flex(1);
+      .px2rem(margin, 0 10px);
+      overflow: hidden;
+
+      .nickname {
+        .px2rem(line-height, 42);
+        .px2rem(font-size, 30);
+        .ellipsis();
+        font-weight: 400;
+      }
+
+      .office {
+        .px2rem(line-height, 36);
+        .px2rem(font-size, 22);
+        .ellipsis();
+      }
+    }
+
+    .user-other {
+      text-align: right;
+
+      .time {
+        .fontSize(30);
+        color: @secondary-font-color;
+      }
+
+      .delete {
+        color: @secondary-font-color;
+        .px2rem(padding-right, 15);
+      }
+    }
+  }
+
+  .trend-body {
+    .px2rem(margin-bottom, 10);
+    border-bottom: 1px solid @border-color;
+
+    .text {
+      .px2rem(font-size, 30);
+      .px2rem(line-height, 45);
+      .px2rem(margin-bottom, 10);
+      //.px2rem(padding-bottom, 46);
+      position: relative;
+      overflow: hidden;
+
+      .toggleShow{
+        .px2rem(font-size, 28);
+        line-height: 1.2;
+        color: @main-color;
+      }
+    }
+
+    .text-limit {
+      .px2rem(max-height, 308);
+
+      .all {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp:6;
+        -webkit-box-orient:vertical;
+      }
+
+      .toggleShow {
+        position: absolute;
+        .px2rem(top, 270);
+      }
+    }
+
+    .images {
+      .flexbox();
+      .px2rem(margin-right, -8);
+      .px2rem(margin-bottom, 20);
+      .flex-wrap();
+      overflow: hidden;
+
+      .img-wrap {
+        .flex(1 0 33.3333%);
+        min-width: 33.3333333%;
+        box-sizing: border-box;
+        .px2rem(padding-right, 8);
+        .px2rem(padding-bottom, 8);
+      }
+    }
+
+    .btns {
+      .flexbox();
+      .px2rem(height, 52);
+      .px2rem(margin-bottom, 20);
+      .justify-content(space-between);
+
+      .btn {
+        .px2rem(margin-left, 15);
+        .px2rem(width, 52);
+        .px2rem(height, 52);
+        position: relative;
+        display: inline-block;
+      }
+
+      .num {
+        position: absolute;
+        .px2rem(top, 0);
+        .px2rem(right, 0);
+        display: block;
+        .px2rem(line-height, 24);
+        .px2rem(padding, 0 5px);
+        border-radius: 50%;
+        text-align: center;
+        background: #fff;
+        color: @secondary-font-color;
+        .px2rem(font-size, 16);
+      }
+    }
+
+    .tags {
+      .px2rem(line-height, 54);
+      .px2rem(font-size, 28);
+      .px2rem(margin-bottom, 10);
+
+      span {
+        .px2rem(margin-right, 15);
+      }
+    }
+
+    .quotes {
+      .px2rem(padding, 10);
+      .px2rem(line-height, 47);
+      .px2rem(margin, -42px  0px  10px  84px);
+      .px2rem(font-size, 28);
+      background: #F9F9F9;
+
+      .content{
+        .ellipsis-2();
+      }
+
+      .img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.trend-comments {
+  .px2rem(padding, 0px 20px);
+  overflow: hidden;
+
+  .title {
+    .px2rem(margin-bottom, 10px);
+    .px2rem(font-size, 30);
+    font-weight: bold;
+  }
+
+  .item {
+    .px2rem(margin-bottom, 20px);
+    .flexbox();
+
+    .user-avatar {
+      .px2rem(margin-right, 32);
+      .px2rem(width, 80);
+      .px2rem(height, 80);
+      .border-radius();
+      overflow: hidden;
+    }
+
+    .comment-info {
+      .flex(1);
+
+      .nickname {
+        .px2rem(line-height, 38);
+        .px2rem(font-size, 26);
+        color: @secondary-font-color;
+      }
+      .office {
+        .px2rem(line-height, 46);
+        .px2rem(font-size, 26);
+        font-weight: bold;
+      }
+      .comment {
+        .px2rem(line-height, 36);
+        .px2rem(font-size, 26);
+      }
+    }
+    .time {
+
+    }
+  }
+}

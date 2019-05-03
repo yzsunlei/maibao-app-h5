@@ -1,0 +1,78 @@
+.loadmore-content{
+  min-height: 100vh;
+  margin-bottom: 5px;
+}
+
+.loadmoreText{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background: transparent;
+  padding: 10px 0px;
+  >span{
+    padding-left: 10px;
+  }
+}
+
+.AllLoaded{
+  color: #999;
+  padding: 15px 0;
+}
+
+.arrow-down {
+  color: #ccc;
+  transition: .2s;
+}
+
+.arrow-pull {
+  transform: rotate(0deg);
+}
+
+.arrow-drop {
+  transform: rotate(-180deg);
+}
+
+.loadmore-top {
+  >div {
+    font-size: 15px;
+    color: #666;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    >span {
+      padding-left: 10px;
+    }
+  }
+}
+@component-namespace mint {
+  @component loadmore {
+    overflow: hidden;
+    @descendent content {
+      @when dropped {
+        transition: .2s;
+      }
+    }
+    @descendent top, bottom {
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+    }
+    @descendent top {
+      margin-top: -50px;
+    }
+    @descendent bottom {
+      margin-bottom: -50px;
+    }
+    @descendent spinner {
+      display: inline-block;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    @descendent text {
+      vertical-align: middle;
+    }
+  }
+}

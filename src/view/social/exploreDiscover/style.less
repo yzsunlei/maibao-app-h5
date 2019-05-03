@@ -1,0 +1,143 @@
+@import "../../../asset/style/index";
+
+.social-explore-discover {
+  background-color: #fff;
+}
+
+.wrap {
+  .px2rem(margin, 0px 20px);
+}
+
+.category {
+  .px2rem(margin-bottom, 20px);
+
+  h2 {
+    .fontSize(36);
+    .px2rem(padding, 20px 0px);
+    border-bottom: 1px solid @border-color;
+  }
+
+  .square {
+    .px2rem(height, 1000px);
+    .px2rem(margin-top, 20px);
+    width: 100%;
+    position: relative;
+
+    .item:nth-child(1) {
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      .px2rem(width, 200px);
+      .px2rem(height, 380px);
+      .px2rem(margin-top, -190px);
+      .px2rem(margin-left, -100px);
+
+      .info {
+        .name {
+          .txt-nowrap();
+          .txt-ellipsis();
+          .fontSize(36);
+          .tac();
+          .px2rem(padding-bottom, 6px);
+          line-height: 1.4;
+        }
+        .company {
+          .txt-nowrap();
+          .txt-ellipsis();
+          .fontSize(32);
+          .tac();
+          color: @secondary-font-color;
+          overflow: hidden;
+        }
+        .position {
+          .txt-nowrap();
+          .txt-ellipsis();
+          .fontSize(32);
+          .tac();
+          color: @secondary-font-color;
+          overflow: hidden;
+        }
+      }
+    }
+
+    .item:nth-child(2) {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      .px2rem(width, 220px);
+      .px2rem(height, 400px);
+    }
+
+    .item:nth-child(3) {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      right: 0;
+      .px2rem(width, 220px);
+      .px2rem(height, 400px);
+    }
+
+    .item:nth-child(4) {
+      position: absolute;
+      overflow: hidden;
+      bottom: 0;
+      left: 0;
+      .px2rem(width, 220px);
+      .px2rem(height, 400px);
+    }
+
+    .item:nth-child(5) {
+      position: absolute;
+      overflow: hidden;
+      bottom: 0;
+      right: 0;
+      .px2rem(width, 220px);
+      .px2rem(height, 400px);
+    }
+
+    .item:not(:first-child) {
+      .avatar {
+        .px2rem(width, 120px);
+        .px2rem(height, 120px);
+        .border-radius();
+        margin: 0 auto;
+      }
+      .info {
+        .name {
+          .tac();
+          .px2rem(padding-bottom, 6px);
+          line-height: 1.4;
+        }
+        .company {
+          .txt-nowrap();
+          .txt-ellipsis();
+          .fontSize(32);
+          .tac();
+          color: @secondary-font-color;
+          overflow: hidden;
+        }
+        .position {
+          .txt-nowrap();
+          .txt-ellipsis();
+          .fontSize(32);
+          .tac();
+          color: @secondary-font-color;
+          overflow: hidden;
+        }
+      }
+      .button {
+        color: #fff;
+        background-color: @main-color;
+        margin: 0 auto;
+        .px2rem(margin-top, 10px);
+        .px2rem(width, 160px);
+        .px2rem(padding, 8px 16px);
+        .border-radius(8px);
+        .tac();
+        .fontSize(28);
+      }
+    }
+  }
+}

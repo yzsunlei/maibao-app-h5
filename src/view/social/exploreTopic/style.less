@@ -1,0 +1,57 @@
+@import "../../../asset/style/index";
+
+.nav-list {
+  .mint-navbar {
+    border-bottom: 1px solid @border-color;
+
+    .mint-tab-item {
+      border-bottom: none;
+    }
+  }
+
+  .mint-tab-container-item {
+    .wrap {
+      .px2rem(margin, 20px);
+    }
+
+    .item {
+      .flexbox();
+      .px2rem(margin-bottom, 20px);
+
+      .avatar {
+        .px2rem(width, 140px);
+        .px2rem(height, 140px);
+        .border-radius();
+        .px2rem(margin-right, 20px);
+        overflow: hidden;
+      }
+
+      .info {
+        .flex(1);
+
+        .name {
+          line-height: 1.4;
+        }
+
+        .position {
+          .fontSize(30);
+          color: @secondary-font-color;
+        }
+
+        .connect {
+          .fontSize(28);
+          color: @secondary-font-color;
+        }
+      }
+
+      .button {
+        align-self: center;
+        color: #fff;
+        background-color: @main-color;
+        .px2rem(padding, 6px 16px);
+        .border-radius(8px);
+        .fontSize(28);
+      }
+    }
+  }
+}

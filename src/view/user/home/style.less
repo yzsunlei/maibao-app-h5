@@ -1,0 +1,81 @@
+@import "../../../asset/style/index";
+
+.user-home {
+  background-color: @background-color;
+}
+
+.user-info {
+  .flexbox();
+  .px2rem(height, 200px);
+  .px2rem(padding, 20px);
+  .px2rem(margin-bottom, 20px);
+  background-color: #fff;
+
+  .avatar {
+    .px2rem(width, 160px);
+    .px2rem(height, 160px);
+    .px2rem(margin-right, 20px);
+
+    .img {
+      .border-radius();
+    }
+  }
+
+  .info {
+    .name {
+      .fontSize(40);
+      .px2rem(line-height, 70px);
+      font-weight: 800;
+    }
+    .company {
+      .fontSize(32);
+      .px2rem(line-height, 50px);
+      color: @secondary-font-color;
+    }
+    .position {
+      .fontSize(32);
+      .px2rem(line-height, 50px);
+      color: @secondary-font-color;
+    }
+  }
+
+  .action {
+    .flex(1);
+    .ta(right);
+    align-self: center;
+  }
+}
+
+.user-tag {
+  .flexbox();
+  .justify-content(space-between);
+  .px2rem(padding, 20px);
+  .px2rem(margin-bottom, 20px);
+  background-color: #fff;
+
+  .tag {
+    .ta(center);
+    .px2rem(padding, 0 40px);
+
+    .number {
+      .fontSize(64);
+      .px2rem(padding-top, 10px);
+      line-height:1.2;
+    }
+
+    .title {
+      color: @secondary-font-color;
+    }
+
+    .text {
+      .fontSize(30);
+    }
+  }
+}
+
+.user-action {
+  .group {
+    .px2rem(margin-bottom, 20px);
+  }
+}
+

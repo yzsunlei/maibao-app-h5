@@ -1,0 +1,268 @@
+@import "../../../asset/style/index";
+
+.user-info {
+  background-color: @background-color;
+}
+
+.uinfo {
+  .tac();
+  .px2rem(margin-bottom, 20px);
+  background-color: #fff;
+
+  .top-bg {
+    .px2rem(height, 200px);
+    background: @main-color;
+  }
+
+  .avatar {
+    .px2rem(width, 160px);
+    .px2rem(height, 160px);
+    .px2rem(margin, -80px auto 20px auto);
+    .border-radius();
+    overflow: hidden;
+  }
+
+  .detail {
+    border-bottom: 1px solid @border-color;
+
+    .name {
+      .fontSize(48);
+      font-weight: 800;
+    }
+
+    .company {
+      .fontSize(32);
+      color: @secondary-font-color;
+    }
+
+    .position {
+      .fontSize(32);
+      .px2rem(margin-bottom, 20px);
+      color: @secondary-font-color;
+    }
+
+    .tags {
+      .fontSize(32);
+      color: @secondary-font-color;
+
+      .num {
+        color: @secondary-color;
+      }
+    }
+
+    .location {
+      .fontSize(32);
+      .px2rem(margin-bottom, 20px);
+      color: @secondary-font-color;
+    }
+
+    .signature {
+      .fontSize(32);
+      .px2rem(margin, 40px auto);
+      color: @secondary-font-color;
+
+      &::before {
+        .px2rem(margin-right, 16px);
+        content: "-";
+      }
+
+      &::after {
+        .px2rem(margin-left, 16px);
+        content: "-";
+      }
+    }
+  }
+
+  .distinct {
+    .flex-auto();
+    .px2rem(padding, 20px);
+
+    .item {
+      .tac();
+
+      .pic {
+        .px2rem(width, 100px);
+        .px2rem(height, 100px);
+        margin: 0 auto;
+      }
+
+      .desc {
+        .fontSize(30);
+        .px2rem(margin-top, 10px);
+        color: @secondary-font-color;
+      }
+    }
+  }
+}
+
+.experience {
+  .px2rem(margin-bottom, 20px);
+  .px2rem(padding, 0px 20px);
+  background-color: #fff;
+
+  .title {
+    .fontSize(36);
+    font-weight: 800;
+  }
+
+  .item {
+    .flexbox();
+
+    .avatar {
+      .px2rem(width, 100px);
+      .px2rem(height, 100px);
+      .px2rem(margin-right, 20px);
+    }
+
+    .content {
+      .flex(1);
+
+      .company {
+        .fontSize(36);
+      }
+
+      .time {
+        .fontSize(34);
+        color: @secondary-font-color;
+      }
+
+      .desc {
+        .fontSize(30);
+      }
+
+      .connect {
+        .fontSize(28);
+        color: @secondary-font-color;
+      }
+    }
+  }
+
+  .edit {
+    .tac();
+    .fontSize(36);
+    .px2rem(padding, 10px 0px);
+    color: @secondary-font-color;
+  }
+}
+
+
+.impression {
+  .px2rem(margin-bottom, 20px);
+  .px2rem(padding, 0px 20px);
+  background-color: #fff;
+
+  .title {
+    .fontSize(36);
+    font-weight: 800;
+
+    .more {
+      .fontSize(28);
+      font-weight: normal;
+      color: @secondary-font-color;
+      float: right;
+    }
+  }
+
+  .item {
+    .px2rem(height, 68px);
+    .px2rem(line-height, 68px);
+    .px2rem(margin, 12px 12px 12px 0px);
+    .px2rem(padding, 0px 40px);
+    .border-radius(32px);
+    .fontSize(32);
+    background-color: @border-color;
+    display: inline-block;
+  }
+}
+
+.recommand {
+  .px2rem(margin-bottom, 20px);
+  .px2rem(padding, 0px 20px);
+
+  .title {
+    .fontSize(36);
+    .tac();
+    .px2rem(padding, 10px);
+    font-weight: 800;
+
+    &::before {
+      content: "~";
+      .px2rem(margin-right, 10px);
+    }
+
+    &::after {
+      content: "~";
+      .px2rem(margin-right, 10px);
+    }
+  }
+
+  .item {
+    .flexbox();
+    .px2rem(margin-bottom, 20px);
+
+    .avatar {
+      .px2rem(width, 140px);
+      .px2rem(height, 140px);
+      .border-radius();
+      .px2rem(margin-right, 20px);
+      overflow: hidden;
+    }
+
+    .info {
+      .flex(1);
+
+      .name {
+        line-height: 1.4;
+      }
+
+      .position {
+        .fontSize(30);
+        color: @secondary-font-color;
+      }
+
+      .connect {
+        .fontSize(28);
+        color: @secondary-font-color;
+      }
+    }
+
+    .button {
+      align-self: center;
+      color: #fff;
+      background-color: @main-color;
+      .px2rem(padding, 6px 16px);
+      .border-radius(8px);
+      .fontSize(28);
+    }
+  }
+}
+
+.action {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .px2rem(height, 110px);
+  .px2rem(padding, 10px);
+  .flexbox();
+  .align-items(center);
+  .justify-content(center);
+
+  .button {
+    .px2rem(height, 90px);
+    .px2rem(line-height, 90px);
+    .px2rem(width, 320px);
+    .tac();
+    .border-radius(50px);
+    .px2rem(margin, 40px);
+  }
+
+  .contact {
+    background-color: @border-color;
+  }
+
+  .share {
+    background-color: @main-color;
+    color: #fff;
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../../asset/style/index";
+
+.user-code {
+  min-height: 100%;
+  position: relative;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.card {
+  .px2rem(width, 660px);
+  .px2rem(height, 840px);
+  .px2rem(margin-top, -420px);
+  .px2rem(margin-left, -330px);
+  .px2rem(padding, 10px 20px);
+  .border-radius(6px);
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+
+  .tool {
+    float: right;
+  }
+
+  .head {
+    .flexbox();
+    .px2rem(margin, 30px);
+
+    .avatar {
+      .px2rem(width, 140px);
+      .px2rem(height, 140px);
+      .px2rem(margin-right, 20px);
+      .border-radius();
+    }
+
+    .info {
+      .name {
+        .fontSize(46);
+        .px2rem(margin-bottom, 10px);
+        font-weight: 800;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .body {
+    .px2rem(margin, 30px);
+  }
+}
